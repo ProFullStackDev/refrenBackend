@@ -3,9 +3,7 @@ const RefUserModel = require('../model/userModel');
 const router = new express.Router();
 
 // create user
-router.get('/', async (req, res) => {
-  res.send({ message: 'hello' });
-});
+
 router.post('/user/addUser', async (req, res) => {
   const newUser = new RefUserModel(req.body);
 
